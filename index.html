@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: #333;
+      margin: 10px;
+      display: inline-block;
+      position: relative;
+    }
+
+    .box:hover .tooltip {
+      display: block;
+    }
+
+    .box:hover .text1 {
+      display: none;
+    }
+
+    .box:hover {
+      border: 0; 
+    }
+
+    .no-hover .text1:hover {
+      color: inherit;
+      background-color: inherit;
+    }
+
+    .text-before {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .text-before2 {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: red;
+    }
+
+    .tooltip {
+      font-size: 14px;
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      text-align: center;
+    }
+
+    .text1 {
+      font-size: 24px;
+      transition: color 0.3s;
+      border: 2px solid #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .text1:hover {
+      color: #000;
+      background-color: #fff;
+    }
+
+    .text2 {
+      font-size: 18px;
+      display: none;
+      margin-top: 20px;
+    }
+
+    .text1:hover + .text2 {
+      display: block;
+      color: #00f;
+    }
+
+    .tooltip a {
+      color: #fff; 
+    }
+
+    .new-text {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="text-before"><br><br>Oi, meu amor.<br> Gostaria de dizer que te amo muito!</p>
+    <p class="text-before">Também gostaria de mostrar como funcionam<br> os efeitos hover do HTML.</p>
+    <p class="text-before2">Passe o mouse por cima dos quadrados abaixo.</p>
+    <div class="box">
+      <p class="text1">1</p>
+      <p class="tooltip">Você é íncrivel!</p>
+    </div>
+    <div class="box">
+      <p class="text1">2</p>
+      <p class="tooltip">Seu jeitinho me conquistou!</p>
+    </div>
+    <div class="box">
+      <p class="text1">3</p>
+      <p class="tooltip">E esse cabelo impecável?</p>
+    </div>
+    <div class="box">
+      <p class="text1">4</p>
+      <p class="tooltip">Sou mais feliz com você.</p>
+    </div>
+    <p class="text-before2">Mais exemplos de hover.</p>
+    <p class="text1">Passe o mouse sobre mim!</p>
+    <p class="text2">Você é tudo e mais um pouco do que sempre sonhei.</p>
+
+    <p class="new-text">Agora umas músicas legais pra apreciar que dedico a você.</p>
+
+    <div class="box no-hover">
+      <p class="text1">5</p>
+      <p class="tooltip"><a href="https://www.youtube.com/watch?v=mVYdy6kdSBg">Link 1</a></p>
+    </div>
+    <div class="box no-hover">
+      <p class="text1">6</p>
+      <p class="tooltip"><a href="https://www.youtube.com/watch?v=9JKKAvihRcc">Link 2</a></p>
+    </div>
+    <div class="box no-hover">
+      <p class="text1">7</p>
+      <p class="tooltip"><a href="https://www.youtube.com/watch?v=0yW7w8F2TVA&list=RDQMsGjpOfx3Vps&index=4">Link 3</a></p>
+    </div>
+    <div class="box no-hover">
+      <p class="text1">8</p>
+      <p class="tooltip"><a href="https://www.youtube.com/watch?v=tgGG29aBPmc">Link 4</a></p>
+    </div>
+    <div class="box no-hover">
+      <p class="text1">9</p>
+      <p class="tooltip"><a href="https://www.youtube.com/watch?v=rcE-nkgEEHA">Link 5</a></p>
+    </div>
+    <div class="box no-hover">
+      <p class="text1">10</p>
+      <p class="tooltip"><a href="https://www.youtube.com/watch?v=iI78MRnHR6Q">Link 6</a></p>
+    </div>
+
+    <p class="new-text">Você é meu bem querer...</p>
+    <div class="image-container">
+      <img src="https://media.discordapp.net/attachments/775429690382090312/976130997487804446/Screenshot_20220517-105912_noteit.jpg?ex=6581aa55&is=656f3555&hm=94402873ea0810617aea8ca801464767990f40220c2d9da8f01ecbda298ff4a9&=&format=webp&width=546&height=585" alt="Descrição da Imagem 1" style="width: 130px; height: 130px; margin: 10px;">
+      <img src="https://media.discordapp.net/attachments/775429690382090312/976130996502147082/Screenshot_20220517-101521_noteit.jpg?ex=6581aa55&is=656f3555&hm=e353912e8199fe32646637837b4eaa55516f9b2daf0f9880a2e080bc3fc26b8d&=&format=webp&width=546&height=585" alt="Descrição da Outra Imagem" style="width: 130px; height: 130px; margin: 10px;">
+      <img src="https://media.discordapp.net/attachments/775429690382090312/976130997965963264/Screenshot_20220517-110218_noteit.jpg?ex=6581aa55&is=656f3555&hm=896270a4ec59545fe7bd26a037a42a1228dbeeda6cf96f59e5ebe4d10d016d20&=&format=webp&width=536&height=585" alt="Descrição da Outra Imagem" style="width: 130px; height: 130px; margin: 10px;">
+      <img src="https://media.discordapp.net/attachments/775429690382090312/976130997156470784/Screenshot_20220517-105649_noteit.jpg?ex=6581aa55&is=656f3555&hm=d4b05faed28b8f4930a63f44e9917b5221cdf6b216e749b4caf53891cfd769ba&=&format=webp&width=548&height=585" alt="Descrição da Outra Imagem" style="width: 130px; height: 130px; margin: 10px;">
+    </div>
+    
+  </div>
+</body>
+</html>
